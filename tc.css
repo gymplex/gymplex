@@ -1,0 +1,31 @@
+body{
+    /* font-family: 'Cairo', sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
+    background: #151515;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+div{
+    font-size: 4em;
+    font-weight: 900;
+    color: #F34E3A;
+}
+
+ol{
+    border: 1px solid #F34E3A;
+    padding: 3em;
+}
+
+li{
+    margin: 3vh 0;
+    font-size: 1em;
+}

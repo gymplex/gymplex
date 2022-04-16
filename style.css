@@ -1,0 +1,220 @@
+body{
+    /* font-family: 'Cairo', sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
+    background: #151515;
+    /* background: url(./assests/gym.jpeg) no-repeat ; */
+    /* background-size: cover; */
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    user-select: none;
+}
+.overlay{
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.5);
+    /* background-color: #151515; */
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.cross{
+    color: #F34E3A;
+    font-weight: 900;
+    position: absolute;
+    font-size: 3em;
+}
+
+.cross-1{
+    top: 0;
+    left: 0;
+}
+.cross-2{
+    top: 2vw;
+    left: 0;
+}
+.cross-3{
+    bottom: 0;
+    right: 0;
+}
+.cross-4{
+    bottom: 0;
+    right: 2vw;
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: black; */
+}
+.gymp{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: black; */
+}
+
+.logo{
+    width: 100%;
+    /* height: 5vh; */
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+.logo-logo{
+    width: 120px;
+}
+
+.title-name{
+    font-size: 4em;
+    text-align: center;
+    font-weight: 400;
+    border-bottom: 5px solid #F34E3A;
+    /* margin-bottom: 2vh; */
+}
+.title-choose{
+    text-align: center;
+    font-weight: 900;
+    font-size: 2.1em;
+    margin-bottom: 2vh;
+
+}
+
+.plan{
+
+    border-radius: 5px;
+    /* background: #151515; */
+    border: 2px solid #F34E3A;
+    height: 20vh;
+    /* width: 22vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .3s;
+}
+.plan:hover{
+    background-color: #151515;
+    /* background-color: #3b3b3b; */
+    box-shadow: 0px 0px 10px #F34E3A;
+}
+.plan-title{
+    text-align: center;
+    font-weight: 900;
+    font-size: 3em;
+    border-bottom: 1px solid #F34E3A;
+}
+.plan-time{
+    text-align: center;
+    font-size: 1.9em;
+    font-weight: 600;
+}
+.plan-pts{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.fa-solid{
+    margin-right: 2vw;
+}
+.plan-btn{
+    width: fit-content;
+    /* display: flex; */
+    /* justify-content: center; */
+    background-color: #F34E3A;
+    padding: 0.5em;
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+.plan-btn:hover{
+    color: white;
+    box-shadow: 0px 0px 10px #F34E3A;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    /* height: 100%; */
+    text-align: center;
+    user-select: all;
+}
+.tc{
+    color: #F34E3A;
+    text-decoration: none;
+    font-weight: 900;
+    transition: .3s;
+}
+.tc:hover{
+    color: white;
+}
+@media(max-width:1000px){
+    .cross{
+        display: none;
+    }
+    body{
+        height: 100%;
+    }
+    .overlay{
+        /* height: 100%; */
+        position: fixed;
+
+    }
+    video{
+        position: fixed;
+    }
+    .plan{
+        width: 40vw;
+        margin: 1vh 0;
+    }
+    .plans{
+        margin-bottom: 10vh;
+    }
+}
+@media(max-width:750px){
+    .title-name{
+        font-size: 3em;
+    }
+    .title-choose{
+        font-size:1.4em;
+    }
+.plan{
+    width: 45vw;
+}
+}
+
+@media(max-width:500px){
+    .plan{
+        width: 95vw;
+    }
+    .footer{
+        font-size: 0.8em;
+    }
+}
+
+@media(max-width:350px){
+    .title-name{
+        font-size: 2.1em;
+        /* padding: 0 0.2vw; */
+
+    }
+    .footer{
+        font-size: 0.7em;
+    }
+}
