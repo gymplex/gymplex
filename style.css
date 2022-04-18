@@ -13,6 +13,11 @@ body{
     flex-direction: column;
     justify-content: space-between;
     user-select: none;
+    background-image: url(./assests/1.jpeg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    overflow-x: hidden;
+    transition: .3s;
 }
 .overlay{
     z-index: -1;
@@ -56,7 +61,7 @@ video{
     left: 0;
     /* background: black; */
 }
-.gymp{
+/* .gymp{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -64,27 +69,30 @@ video{
     position: absolute;
     top: 0;
     left: 0;
-    /* background: black; */
-}
+   
+} */
 
 .logo{
     width: 100%;
     /* height: 5vh; */
     display: flex;
     justify-content: center;
-    background-color: white;
+    /* background-color: white; */
     margin: 0;
     padding: 0;
 }
 .logo-logo{
-    width: 120px;
+    width: 30em;
+    border-radius: 50px;
+    border: 10px solid #F34E3A;
+    padding: 0;
 }
 
 .title-name{
     font-size: 4em;
     text-align: center;
     font-weight: 400;
-    border-bottom: 5px solid #F34E3A;
+    /* border-bottom: 5px solid #F34E3A; */
     /* margin-bottom: 2vh; */
 }
 .title-choose{
@@ -153,7 +161,7 @@ video{
 .footer{
     /* height: 100%; */
     text-align: center;
-    user-select: all;
+    user-select:text;
 }
 .tc{
     color: #F34E3A;
@@ -165,6 +173,9 @@ video{
     color: white;
 }
 @media(max-width:1000px){
+    .logo-logo{
+        width: 25em;
+    }
     .cross{
         display: none;
     }
@@ -188,6 +199,9 @@ video{
     }
 }
 @media(max-width:750px){
+    .logo-logo{
+        width: 20em;
+    }
     .title-name{
         font-size: 3em;
     }
@@ -200,8 +214,14 @@ video{
 }
 
 @media(max-width:500px){
+    body{
+        background-position: center;
+    }
+    .logo-logo{
+        width: 15em;
+    }
     .plan{
-        width: 95vw;
+        width: 60vw;
     }
     .footer{
         font-size: 0.8em;
@@ -209,6 +229,9 @@ video{
 }
 
 @media(max-width:350px){
+    .logo-logo{
+        width: 12em;
+    }
     .title-name{
         font-size: 2.1em;
         /* padding: 0 0.2vw; */
