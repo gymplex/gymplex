@@ -13,7 +13,6 @@ body{
     flex-direction: column;
     justify-content: space-between;
     user-select: none;
-    background-image: url(./assests/1.jpeg);
     /* background-repeat: no-repeat; */
     background-size: cover;
     overflow-x: hidden;
@@ -123,7 +122,7 @@ video{
 .plan-title{
     text-align: center;
     font-weight: 900;
-    font-size: 3em;
+    font-size: 2em;
     border-bottom: 1px solid #F34E3A;
 }
 .plan-time{
@@ -171,6 +170,14 @@ video{
 }
 .tc:hover{
     color: white;
+}
+.vikaslink{
+    text-decoration: none;
+    color: #F34E3A;
+    background-color: black;
+    font-size: 1.2em;
+    padding: 0.3em;
+    margin: 0.3em;
 }
 @media(max-width:1000px){
     .logo-logo{
